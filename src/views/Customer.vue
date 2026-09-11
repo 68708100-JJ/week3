@@ -4,6 +4,9 @@
     <h2 class="mb-3">รายชื่อลูกค้า</h2>
     
     <!-- ตารางแสดงข้อมูลลูกค้า -->
+     <div class="text-end mb-3">
+      <a href="/add_customer"class="btn btn-primary">add+</a>
+     </div>
     <table class="table table-bordered table-striped">
       <thead class="table-dark">
         <tr>
@@ -62,7 +65,7 @@ export default {
     const fetchdata = async () => {
       try {
         // เรียก API (PHP)
-        const response = await fetch("http://localhost/week3_68708100/php.api/show_customer.php");
+        const response = await fetch("http://localhost/week3/php.api/show_customer.php");
 
         // ตรวจสอบว่าการเรียกสำเร็จหรือไม่
         if (!response.ok) {

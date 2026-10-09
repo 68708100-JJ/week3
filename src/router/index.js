@@ -49,6 +49,18 @@ const routes = [
    
     component: () => import(/* webpackChunkName: "about" */ '../views/Addcontacts.vue')
   },
+  {
+    path: '/ACC',
+    name: 'custommer_crud',
+   
+    component: () => import(/* webpackChunkName: "about" */ '../views/Customer_crud.vue')
+  },
+  {
+    path: '/AEP',
+    name: 'employee_crud',
+   
+    component: () => import(/* webpackChunkName: "about" */ '../views/Employee_crud.vue')
+  }
 ]
 
 const router = createRouter({
